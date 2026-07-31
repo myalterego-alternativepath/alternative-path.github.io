@@ -1,3 +1,4 @@
+// Updated build: star logo and animated starfield
 const topbar = document.getElementById('topbar');
 const drawer = document.getElementById('drawer');
 const menuBtn = document.getElementById('menuBtn');
