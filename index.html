@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05020d">
+  <title>Alternative Path: Alterego</title>
+  <meta name="description" content="Официальный сайт комикса Alternative Path: Alterego">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="stars stars-2" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="На главную">
+      <span class="brand-mark">AP</span>
+      <span class="brand-text">ALTERNATIVE PATH</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">☰</button>
+  </header>
+
+  <nav class="drawer" id="drawer" aria-label="Главное меню">
+    <a href="#home">Главная</a>
+    <a href="#comic">Комикс</a>
+    <a href="#characters">Персонажи</a>
+    <a href="#worlds">Миры</a>
+    <a href="#news">Новости</a>
+  </nav>
+
+  <main>
+    <section class="hero page" id="home">
+      <div class="hero-glow"></div>
+      <div class="logo-orbit" aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="main-logo" aria-label="Alternative Path: Alterego">
+          <span class="ap">AP</span>
+          <span class="full-title">ALTERNATIVE PATH</span>
+          <span class="alterego">ALTEREGO</span>
+        </div>
+        <p class="tagline">Каждый выбор создаёт новый путь.</p>
+        <a class="primary-btn" href="#comic">Начать путешествие</a>
+      </div>
+    </section>
+
+    <section class="content-section page" id="comic">
+      <div class="section-heading">
+        <span class="eyebrow">КОМИКС</span>
+        <h1>Главы</h1>
+        <p>Вертикальный формат чтения, созданный для телефона.</p>
+      </div>
+
+      <div class="chapters">
+        <a class="chapter-card" href="#chapter-1">
+          <div>
+            <span class="chapter-number">Арка 1</span>
+            <h2>Глава 1</h2>
+          </div>
+          <span class="chapter-status ready">Читать</span>
+        </a>
+
+        <article class="chapter-card locked" aria-disabled="true">
+          <div>
+            <span class="chapter-number">Арка 1</span>
+            <h2>Глава 2</h2>
+          </div>
+          <span class="chapter-status">Скоро</span>
+        </article>
+
+        <article class="chapter-card locked" aria-disabled="true">
+          <div>
+            <span class="chapter-number">Арка 1</span>
+            <h2>Глава 3</h2>
+          </div>
+          <span class="chapter-status">Скоро</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="reader page" id="chapter-1">
+      <div class="reader-head">
+        <a href="#comic" class="back-link">← К списку глав</a>
+        <span>Арка 1: Глава 1</span>
+      </div>
+
+      <div class="webtoon">
+        <div class="panel panel-1">
+          <div class="panel-copy">
+            <span>ПРОЛОГ</span>
+            <h2>Тишина перед выбором</h2>
+          </div>
+        </div>
+        <div class="panel panel-2">
+          <p>Здесь будет первый кадр твоего комикса.</p>
+        </div>
+        <div class="panel panel-3">
+          <p>Изображения главы можно будет добавить позже.</p>
+        </div>
+        <div class="panel panel-4">
+          <p>Формат уже настроен под длинную вертикальную прокрутку.</p>
+        </div>
+      </div>
+
+      <div class="chapter-end">
+        <span>Конец главы</span>
+        <h2>Продолжение скоро</h2>
+        <div class="end-actions">
+          <button class="secondary-btn" disabled>Следующая глава</button>
+          <a class="primary-btn small" href="#comic">К списку глав</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section page placeholder-section" id="characters">
+      <span class="eyebrow">ВСЕЛЕННАЯ</span>
+      <h1>Персонажи</h1>
+      <p>Раздел подготовлен. Сюда мы добавим карточки десяти главных персонажей.</p>
+    </section>
+
+    <section class="content-section page placeholder-section" id="worlds">
+      <span class="eyebrow">МИРЫ</span>
+      <h1>Четыре части мира</h1>
+      <p>Вексул, Кесади, Кха-Кха и Диаспаро получат отдельные страницы.</p>
+    </section>
+
+    <section class="content-section page placeholder-section" id="news">
+      <span class="eyebrow">НОВОСТИ</span>
+      <h1>Обновления проекта</h1>
+      <p>Здесь будут анонсы глав, арты и материалы о создании вселенной.</p>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Навигация">
+    <a href="#home"><span>⌂</span>Главная</a>
+    <a href="#comic"><span>◫</span>Комикс</a>
+    <a href="#characters"><span>◇</span>Герои</a>
+    <a href="#worlds"><span>◎</span>Миры</a>
+    <a href="#news"><span>✦</span>Новости</a>
+  </nav>
+
+  <footer>
+    <p>Created by <strong>AIDAN VANE</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
