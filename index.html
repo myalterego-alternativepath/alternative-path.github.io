@@ -9,181 +9,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="stars" aria-hidden="true"></div>
-  <div class="stars stars-2" aria-hidden="true"></div>
-
+  <div class="stars" aria-hidden="true"></div><div class="stars stars-2" aria-hidden="true"></div>
   <header class="topbar" id="topbar">
-    <a class="brand" href="#home" aria-label="На главную">
-      <img class="brand-mark" src="logo-star.png" alt="">
-      <span class="brand-text">ALTERNATIVE PATH</span>
-    </a>
+    <a class="brand" href="#home" aria-label="На главную"><img class="brand-mark" src="logo-star.png" alt=""><span class="brand-text">ALTERNATIVE PATH</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">☰</button>
   </header>
-
   <nav class="drawer" id="drawer" aria-label="Главное меню">
-    <a href="#home">Главная</a>
-    <a href="#comic">Комикс</a>
-    <a href="#characters">Персонажи</a>
-    <a href="#worlds">Миры</a>
-    <a href="#news">Новости</a>
+    <a href="#home">Главная</a><a href="#comic">Комикс</a><a href="#characters">Персонажи</a><a href="#worlds">Миры</a><a href="#news">Новости</a>
   </nav>
-
   <main>
-    <section class="hero page" id="home">
-      <div class="hero-glow" aria-hidden="true"></div>
+    <section class="hero page" id="home"><div class="hero-glow"></div><div class="hero-content"><div class="main-logo"><img class="star-logo" src="logo-star.png" alt="Логотип Alternative Path: Alterego"><span class="full-title">ALTERNATIVE PATH</span><span class="alterego">ALTEREGO</span></div><p class="tagline">Каждый выбор создаёт новый путь.</p><a class="primary-btn" href="#comic">Начать путешествие</a></div></section>
 
-      <div class="hero-content">
-        <div class="main-logo" aria-label="Alternative Path: Alterego">
-          <img class="star-logo" src="logo-star.png" alt="Логотип Alternative Path: Alterego">
-          <span class="full-title">ALTERNATIVE PATH</span>
-          <span class="alterego">ALTEREGO</span>
-        </div>
-        <p class="tagline">Каждый выбор создаёт новый путь.</p>
-        <a class="primary-btn" href="#comic">Начать путешествие</a>
-      </div>
-    </section>
+    <section class="content-section page" id="comic"><div class="section-heading"><span class="eyebrow">КОМИКС</span><h1>Главы</h1><p>Вертикальный формат чтения, созданный для телефона.</p></div><div class="chapters"><a class="chapter-card" href="#chapter-1"><div><span class="chapter-number">Арка 1</span><h2>Глава 1</h2></div><span class="chapter-status ready">Читать</span></a><article class="chapter-card locked"><div><span class="chapter-number">Арка 1</span><h2>Глава 2</h2></div><span class="chapter-status">Скоро</span></article><article class="chapter-card locked"><div><span class="chapter-number">Арка 1</span><h2>Глава 3</h2></div><span class="chapter-status">Скоро</span></article></div></section>
 
-    <section class="content-section page" id="comic">
-      <div class="section-heading">
-        <span class="eyebrow">КОМИКС</span>
-        <h1>Главы</h1>
-        <p>Вертикальный формат чтения, созданный для телефона.</p>
-      </div>
-
-      <div class="chapters">
-        <a class="chapter-card" href="#chapter-1">
-          <div>
-            <span class="chapter-number">Арка 1</span>
-            <h2>Глава 1</h2>
-          </div>
-          <span class="chapter-status ready">Читать</span>
-        </a>
-
-        <article class="chapter-card locked" aria-disabled="true">
-          <div>
-            <span class="chapter-number">Арка 1</span>
-            <h2>Глава 2</h2>
-          </div>
-          <span class="chapter-status">Скоро</span>
-        </article>
-
-        <article class="chapter-card locked" aria-disabled="true">
-          <div>
-            <span class="chapter-number">Арка 1</span>
-            <h2>Глава 3</h2>
-          </div>
-          <span class="chapter-status">Скоро</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="reader page" id="chapter-1">
-      <div class="reader-head">
-        <a href="#comic" class="back-link">← К списку глав</a>
-        <span>Арка 1: Глава 1</span>
-      </div>
-
-      <div class="webtoon">
-        <div class="panel panel-1">
-          <div class="panel-copy">
-            <span>ПРОЛОГ</span>
-            <h2>Тишина перед выбором</h2>
-          </div>
-        </div>
-        <div class="panel panel-2">
-          <p>Здесь будет первый кадр твоего комикса.</p>
-        </div>
-        <div class="panel panel-3">
-          <p>Изображения главы можно будет добавить позже.</p>
-        </div>
-        <div class="panel panel-4">
-          <p>Формат уже настроен под длинную вертикальную прокрутку.</p>
-        </div>
-      </div>
-
-      <div class="chapter-end">
-        <span>Конец главы</span>
-        <h2>Продолжение скоро</h2>
-        <div class="end-actions">
-          <button class="secondary-btn" disabled>Следующая глава</button>
-          <a class="primary-btn small" href="#comic">К списку глав</a>
-        </div>
-      </div>
-    </section>
+    <section class="reader page" id="chapter-1"><div class="reader-head"><a href="#comic" class="back-link">← К списку глав</a><span>Арка 1: Глава 1</span></div><div class="webtoon"><div class="panel panel-1"><div class="panel-copy"><span>ПРОЛОГ</span><h2>Тишина перед выбором</h2></div></div><div class="panel panel-2"><p>Здесь будет первый кадр твоего комикса.</p></div><div class="panel panel-3"><p>Изображения главы можно будет добавить позже.</p></div><div class="panel panel-4"><p>Формат уже настроен под длинную вертикальную прокрутку.</p></div></div><div class="chapter-end"><span>Конец главы</span><h2>Продолжение скоро</h2><a class="primary-btn small" href="#comic">К списку глав</a></div></section>
 
     <section class="content-section page characters-section" id="characters">
-      <div class="section-heading">
-        <span class="eyebrow">ВСЕЛЕННАЯ</span>
-        <h1>Герои</h1>
-        <p>Персонажи мира Alternative Path: Alterego.</p>
-      </div>
-
+      <div class="section-heading"><span class="eyebrow">ВСЕЛЕННАЯ</span><h1>Персонажи</h1></div>
       <div class="character-grid">
         <article class="character-card">
-          <div class="character-card-image">
-            <img src="gagafon-poisont.jpg" alt="Гагафон Пойсонт">
-            <img class="element-badge" src="element-earth.png" alt="Символ элемента Земля">
-          </div>
-          <div class="character-card-body">
-            <span class="character-status">Последний Оплот</span>
-            <h2>Гагафон Пойсонт</h2>
-            <p><strong>Стоймайтен</strong> · Земля</p>
-            <a class="primary-btn small" href="#gagafon-poisont">Подробнее</a>
-          </div>
+          <div class="character-art-wrap"><img class="character-art" src="assets/gagafon.jpg" alt="Гагафон Пойсонт"><img class="card-element" src="assets/earth.png" alt="Символ Земли"></div>
+          <div class="character-card-body"><span class="character-status">ПОСЛЕДНИЙ ОПЛОТ</span><h2>Гагафон Пойсонт</h2><p><strong>Стоймайтен</strong> · Земля</p><a class="primary-btn small" href="#gagafon">Подробнее</a></div>
+        </article>
+        <article class="character-card">
+          <div class="character-art-wrap"><img class="character-art" src="assets/heinrich.jpg" alt="Генрих Зонненшайн"><img class="card-element" src="assets/light.png" alt="Символ Света"></div>
+          <div class="character-card-body"><span class="character-status">ПИЛИГРИМ</span><h2>Генрих Зонненшайн</h2><p><strong>Вита</strong> · Свет</p><a class="primary-btn small" href="#heinrich">Подробнее</a></div>
         </article>
       </div>
     </section>
 
-    <section class="content-section page character-profile" id="gagafon-poisont">
-      <a href="#characters" class="back-link profile-back">← Назад к героям</a>
-      <div class="profile-layout">
-        <div class="profile-portrait">
-          <img src="gagafon-poisont.jpg" alt="Гагафон Пойсонт">
-        </div>
-        <div class="profile-main">
-          <span class="eyebrow">ПЕРСОНАЖ</span>
-          <h1>Гагафон Пойсонт</h1>
-          <div class="profile-title">Последний Оплот</div>
-          <div class="profile-facts">
-            <div><span>Возраст</span><strong>26 лет</strong></div>
-            <div><span>Дата рождения</span><strong>1 января</strong></div>
-            <div class="element-fact"><img src="element-earth.png" alt=""><span>Элемент</span><strong>Стоймайтен</strong><small>Класс: Земля</small></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="story-block">
-        <span class="eyebrow">ИСТОРИЯ</span>
-        <p>Гагафон вырос в семье, где детство закончилось слишком рано. Его отец ушёл, когда он был ребёнком, а мать стала зависимой от алкоголя, теряя себя. Единственным человеком, подарившим ему заботу и чувство дома, стала бабушка, воспитавшая его среди цветов и деревьев сада.</p>
-        <p>С ранних лет Гагафон привык рассчитывать только на себя. Он редко говорит о своих переживаниях и помогает другим, даже если сам несёт тяжёлую ношу. За его спокойствием скрывается человек, который знает цену семье, доверию и потерям.</p>
+    <section class="character-detail page" id="gagafon">
+      <div class="detail-art"><img src="assets/gagafon.jpg" alt="Гагафон Пойсонт"></div>
+      <div class="detail-content"><span class="eyebrow">ПЕРСОНАЖ</span><h1>Гагафон<br>Пойсонт</h1><div class="detail-status">ПОСЛЕДНИЙ ОПЛОТ</div>
+        <div class="info-grid"><div class="info-card"><span>ВОЗРАСТ</span><strong>26 лет</strong></div><div class="info-card"><span>ДАТА РОЖДЕНИЯ</span><strong>1 января</strong></div><div class="info-card element-info"><div><span>ЭЛЕМЕНТ</span><strong>Стоймайтен</strong><p>Класс: Земля</p></div><img src="assets/earth.png" alt="Символ Земли"></div></div>
+        <article class="story-card"><span class="eyebrow">ИСТОРИЯ</span><p>Гагафон вырос в семье, где детство закончилось слишком рано. Его отец ушёл, когда он был ребёнком, а мать стала зависимой от алкоголя, теряя себя. Единственным человеком, подарившим ему заботу и чувство дома, стала бабушка, воспитавшая его среди цветов и деревьев сада.</p><p>С ранних лет Гагафон привык рассчитывать только на себя. Он редко говорит о своих переживаниях и помогает другим, даже если сам несёт тяжёлую ношу. За его спокойствием скрывается человек, который знает цену семье, доверию и потерям.</p></article>
+        <a class="back-characters" href="#characters">← Назад к героям</a>
       </div>
     </section>
 
-    <section class="content-section page placeholder-section" id="worlds">
-      <span class="eyebrow">МИРЫ</span>
-      <h1>Четыре части мира</h1>
-      <p>Вексул, Кесади, Кха-Кха и Диаспаро получат отдельные страницы.</p>
+    <section class="character-detail page" id="heinrich">
+      <div class="detail-art"><img src="assets/heinrich.jpg" alt="Генрих Зонненшайн"></div>
+      <div class="detail-content"><span class="eyebrow">ПЕРСОНАЖ</span><h1>Генрих<br>Зонненшайн</h1><div class="detail-status">ПИЛИГРИМ</div>
+        <div class="info-grid"><div class="info-card"><span>ВОЗРАСТ</span><strong>31 год</strong></div><div class="info-card"><span>ДАТА РОЖДЕНИЯ</span><strong>2 февраля</strong></div><div class="info-card element-info"><div><span>ЭЛЕМЕНТ</span><strong>Вита</strong><p>Класс: Свет</p></div><img src="assets/light.png" alt="Символ Света"></div></div>
+        <article class="story-card"><span class="eyebrow">ИСТОРИЯ</span><p>Генриха нашли младенцем у стен монастыря. Не зная, кто оставил его и почему, монахи приняли ребёнка и воспитали его как своего.</p><p>С ранних лет Генрих изучал не только учения монахов, но и мир вокруг. Он покидал стены монастыря, встречал людей и видел жизнь за пределами спокойствия. Этот опыт позволил ему сохранить мудрость и понимание людей.</p><p>Годы дисциплины и наблюдения сформировали в нём человека, умеющего сохранять спокойствие там, где другие теряют себя. Генрих не стремится изменить мир силой — он верит, что настоящие перемены начинаются с понимания.</p><p>В 24 года Генрих узнал, что среди монахов, воспитавших его, были его родители. Услышав правду, он не злился — он принял их выбор, доказав, что уроки, которым его учили с детства, стали частью его самого.</p><p>Став Пилигримом, он продолжает путь, следуя принципам, которым посвятил всю жизнь.</p></article>
+        <a class="back-characters" href="#characters">← Назад к героям</a>
+      </div>
     </section>
 
-    <section class="content-section page placeholder-section" id="news">
-      <span class="eyebrow">НОВОСТИ</span>
-      <h1>Обновления проекта</h1>
-      <p>Здесь будут анонсы глав, арты и материалы о создании вселенной.</p>
-    </section>
+    <section class="content-section page placeholder-section" id="worlds"><span class="eyebrow">МИРЫ</span><h1>Четыре части мира</h1><p>Вексул, Кесади, Кха-Кха и Диаспаро получат отдельные страницы.</p></section>
+    <section class="content-section page placeholder-section" id="news"><span class="eyebrow">НОВОСТИ</span><h1>Обновления проекта</h1><p>Здесь будут анонсы глав, арты и материалы о создании вселенной.</p></section>
   </main>
-
-  <nav class="bottom-nav" aria-label="Навигация">
-    <a href="#home"><span>⌂</span>Главная</a>
-    <a href="#comic"><span>◫</span>Комикс</a>
-    <a href="#characters"><span>◇</span>Герои</a>
-    <a href="#worlds"><span>◎</span>Миры</a>
-    <a href="#news"><span>✦</span>Новости</a>
-  </nav>
-
-  <footer>
-    <p>Created by <strong>AIDAN VANE</strong></p>
-  </footer>
-
+  <nav class="bottom-nav" aria-label="Навигация"><a href="#home"><span>⌂</span>Главная</a><a href="#comic"><span>◫</span>Комикс</a><a href="#characters"><span>◇</span>Герои</a><a href="#worlds"><span>◎</span>Миры</a><a href="#news"><span>✦</span>Новости</a></nav>
+  <footer><p>Created by <strong>AIDAN VANE</strong></p></footer>
   <script src="script.js"></script>
-</body>
-</html>
+</body></html>
