@@ -1,0 +1,90 @@
+:root{
+  --star-white:#ffffff;
+  --star-blue:#9fd6ff;
+  --star-violet:#c6b3ff;
+}
+
+.stars,
+.stars::before,
+.stars::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+}
+
+.stars{
+    z-index:0;
+    overflow:hidden;
+    background:
+      radial-gradient(circle,var(--star-white) 0 0.7px,transparent 1.3px),
+      radial-gradient(circle,var(--star-blue) 0 1px,transparent 1.8px),
+      radial-gradient(circle,var(--star-violet) 0 0.9px,transparent 1.7px);
+
+    background-size:
+      70px 70px,
+      120px 120px,
+      180px 180px;
+
+    animation:starsMove1 140s linear infinite;
+}
+
+.stars::before{
+    background:
+      radial-gradient(circle,#fff 0 1.5px,transparent 2px),
+      radial-gradient(circle,#fff 0 2.3px,transparent 3px);
+
+    background-size:
+      230px 230px,
+      320px 320px;
+
+    opacity:.65;
+
+    animation:starsMove2 220s linear infinite reverse;
+}.stars::after{
+  background:
+    linear-gradient(90deg,transparent,rgba(255,255,255,.95),transparent) 14% 18%/26px 1px no-repeat,
+    linear-gradient(transparent,rgba(255,255,255,.95),transparent) 14% 18%/1px 26px no-repeat,
+
+    linear-gradient(90deg,transparent,rgba(180,210,255,.9),transparent) 76% 27%/20px 1px no-repeat,
+    linear-gradient(transparent,rgba(180,210,255,.9),transparent) 76% 27%/1px 20px no-repeat,
+
+    linear-gradient(90deg,transparent,rgba(220,195,255,.85),transparent) 34% 63%/30px 1px no-repeat,
+    linear-gradient(transparent,rgba(220,195,255,.85),transparent) 34% 63%/1px 30px no-repeat,
+
+    linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent) 88% 74%/22px 1px no-repeat,
+    linear-gradient(transparent,rgba(255,255,255,.9),transparent) 88% 74%/1px 22px no-repeat,
+
+    linear-gradient(90deg,transparent,rgba(170,220,255,.9),transparent) 58% 42%/18px 1px no-repeat,
+    linear-gradient(transparent,rgba(170,220,255,.9),transparent) 58% 42%/1px 18px no-repeat;
+
+  filter:drop-shadow(0 0 5px rgba(170,195,255,.85));
+  animation:starTwinkle 7s ease-in-out infinite;
+}@keyframes starsMove1{
+  from{transform:translate3d(0,0,0);}
+  to{transform:translate3d(-140px,180px,0);}
+}
+
+@keyframes starsMove2{
+  from{transform:translate3d(0,0,0);}
+  to{transform:translate3d(180px,-140px,0);}
+}
+
+@keyframes starTwinkle{
+  0%,100%{
+    opacity:.45;
+    transform:scale(1);
+  }
+  25%{
+    opacity:1;
+    transform:scale(1.35);
+  }
+  50%{
+    opacity:.6;
+    transform:scale(.9);
+  }
+  75%{
+    opacity:.95;
+    transform:scale(1.2);
+  }
+}
