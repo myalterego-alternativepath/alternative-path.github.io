@@ -6,3 +6,21 @@
 .character-detail{width:min(100%,900px);margin:auto;padding:66px 0 118px}.detail-art{height:min(78svh,700px);overflow:hidden;border-bottom:1px solid var(--line)}.detail-art img{width:100%;height:100%;object-fit:cover;object-position:center 16%;display:block}.detail-content{padding:26px 18px 0}.detail-content h1{font-size:clamp(40px,10.5vw,72px);line-height:.98;margin:17px 0 22px;overflow-wrap:anywhere}.detail-status{font-size:18px;margin-bottom:34px}.info-grid{display:grid;gap:16px}.info-card,.story-card{border:1px solid var(--line);border-radius:26px;background:rgba(9,11,40,.82);padding:26px 24px}.info-card span{display:block;color:#aaaec4;font-size:14px;letter-spacing:.1em;margin-bottom:11px}.info-card strong{font-size:25px}.info-card p{margin:7px 0 0;color:#b7b1c7;font-size:17px}.element-info{display:flex;align-items:center;justify-content:space-between;gap:12px}.element-info img{width:92px;height:92px;object-fit:contain}.story-card{margin-top:42px;padding:30px 24px}.story-card p{font-size:18px;line-height:1.75;color:#d1d2df;margin:24px 0 0}.back-characters{margin:28px 0 0;border:1px solid var(--line);background:rgba(255,255,255,.04)}
 .bottom-nav{position:fixed;left:10px;right:10px;bottom:calc(10px + var(--safe-bottom));z-index:19;min-height:65px;display:grid;grid-template-columns:repeat(5,1fr);border:1px solid rgba(255,255,255,.09);border-radius:22px;background:rgba(7,8,22,.91);backdrop-filter:blur(22px);overflow:hidden}.bottom-nav a{display:flex;flex-direction:column;gap:5px;align-items:center;justify-content:center;color:#938ba8;font-size:9px;font-weight:600}.bottom-nav a span{color:white;font-size:18px}.bottom-nav a.active{color:#c4b6ff;background:rgba(115,92,255,.1)}footer{text-align:center;padding:50px 20px 120px;color:#756e87;font-size:11px}
 @media(min-width:760px){.bottom-nav{width:580px;left:50%;right:auto;transform:translateX(-50%)}.menu-btn{display:none}.drawer{top:0;right:24px;height:66px;min-width:0;display:flex;background:transparent;border:0;opacity:1;pointer-events:auto;transform:none}.drawer a{display:flex;align-items:center;font-size:12px}.character-grid{grid-template-columns:repeat(2,1fr)}.character-detail{display:grid;grid-template-columns:48% 52%;padding-top:90px}.detail-art{position:sticky;top:66px;height:calc(100svh - 66px);border:1px solid var(--line);border-radius:30px}.detail-content{padding:20px 0 120px 40px}.detail-content h1{font-size:58px}.story-card{padding:38px}.story-card p{font-size:19px;line-height:1.8}}@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+/* Worlds */
+.worlds-section{width:min(100%,980px)}
+.worlds-heading{max-width:780px;margin-bottom:46px}
+.worlds-intro{font-size:clamp(18px,4.6vw,24px);color:#d9dbea!important}
+.world-block{margin:0 0 86px;border:1px solid var(--line);border-radius:30px;overflow:hidden;background:rgba(7,9,30,.82);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.world-hero-image{display:block;width:100%;height:auto;max-height:620px;object-fit:cover;background:#050612}
+.world-copy{padding:28px 22px 32px}
+.world-kind,.place-label{display:block;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.18em}
+.world-copy h2{margin:10px 0 20px;font-size:clamp(36px,9vw,64px);line-height:1}
+.world-copy p{margin:0 0 18px;color:#d1d3e0;font-size:17px;line-height:1.75}
+.places-grid{display:grid;gap:18px;padding:0 16px 18px}
+.place-card{overflow:hidden;border:1px solid rgba(216,174,114,.24);border-radius:24px;background:rgba(15,16,45,.78)}
+.place-card>img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.place-card>div{padding:22px 20px 24px}
+.place-card h3{margin:8px 0 12px;font-size:30px;line-height:1.05}
+.place-card p{margin:0;color:#c8cad8;font-size:16px;line-height:1.7}
+.world-block>.place-card{margin:0 16px 18px}
+@media(min-width:760px){.world-copy{padding:40px 44px 44px}.world-copy p{font-size:18px}.places-grid{grid-template-columns:repeat(2,1fr);padding:0 28px 28px}.place-card-wide{grid-column:1/-1}.world-block>.place-card{display:grid;grid-template-columns:45% 55%;margin:0 28px 28px}.world-block>.place-card>img{height:100%;aspect-ratio:auto}.place-card h3{font-size:34px}}
